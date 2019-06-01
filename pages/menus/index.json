@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+      "v-support": "/components/support/index",
+      "v-loading": "/components/loading/index"
+  }
+}

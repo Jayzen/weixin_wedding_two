@@ -1,0 +1,6 @@
+<v-carousel carousels="{{carousels}}" />
+<v-photograph photographs="{{photographs}}" />
+<view class="home_title">最新活动</view>
+<v-recent photographs="{{photographs}}" />
+<v-support />
+<v-loading class="loading-center" wx:if="{{loadingCenter}}"/>

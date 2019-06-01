@@ -1,0 +1,6 @@
+<view class="share_container">
+  <button class="func-image" open-type="share">
+    <image slot="img" src="/imgs/public/share.png" />
+    <view>分享</view>
+  </button>
+</view>

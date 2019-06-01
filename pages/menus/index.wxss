@@ -1,0 +1,20 @@
+.photographs_item{
+  font-size:0;
+}
+
+.photographs_img{
+  width:100%;
+}
+
+.photographs_discription{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height:100rpx;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.photographs_name{
+  margin-right:40rpx;
+}

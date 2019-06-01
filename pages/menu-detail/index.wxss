@@ -1,0 +1,81 @@
+.item-image{
+  width:100%;
+}
+.title{
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  padding:20rpx 40rpx;
+}
+
+.title_price{
+  font-size:20px;
+  color:#587d5c;
+}
+
+.desc_title{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height:60rpx;
+  border-bottom:1px solid #ddd;
+}
+
+.content_wrapper > view{
+  padding:20rpx 40rpx;
+  /* border-bottom:1px solid #ddd; */
+}
+
+.content_item{
+  display:flex;
+  padding:20rpx 0;
+  border-bottom:1rpx solid #ddd;
+}
+.content_item_right{
+  display:flex;
+  flex-direction:column;
+}
+.title_t{
+  margin-bottom:10rpx;
+}
+/* .content_item .content_title{
+  display:flex;
+  align-items:center;
+  margin-bottom:20rpx;
+} */
+
+.content_item image{
+  height:30rpx;
+  width:30rpx;
+  margin-top:10rpx;
+  margin-right:30rpx;
+}
+
+.detailed_list{
+  padding:30rpx 70rpx;
+  border-bottom:1px solid #ddd;
+}
+
+.user_btn{
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  margin-top:60rpx;
+  margin-bottom:40rpx;
+}
+
+.btn{
+  flex-basis:30%;
+  height:80rpx;
+  background:#ddd;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  color:#fff;
+}
+.consultation{
+  background:#2E3C55;
+}
+.appointment{
+  background:#608363;
+}

@@ -1,0 +1,9 @@
+<block wx:for="{{menus}}">
+    <image src="{{item.pic}}" />
+    <view class="photographs_name">{{item.title}}</view>
+    <view>{{"¥"+item.price}}</view>
+    <view>{{item.content}}</view>
+    <view data-id="{{item.id}}" bind:tap="onTap">点击查看更多</view>
+</block>
+<v-support />
+<v-loading class="loading-center" wx:if="{{loadingCenter}}" />

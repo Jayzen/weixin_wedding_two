@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+        "v-carousel": "/components/carousel/index",
+        "v-photograph": "/components/photograph/index",
+        "v-recent": "/components/recent/index",
+        "v-consult": "/components/consult/index",
+        "v-support": "/components/support/index",
+        "v-loading": "/components/loading/index"
+  }
+}
