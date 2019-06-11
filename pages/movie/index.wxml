@@ -1,6 +1,6 @@
 <block wx:for="{{movies}}">
   <view>
-    <video data-id="{{item.id}}" bind:tap="onTap" src="{{item.movie}}" />
+    <video src="{{item.movie}}" />
     <view>{{item.title}}</view>
     <view>{{item.content}}</view>
   </view>

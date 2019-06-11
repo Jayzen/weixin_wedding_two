@@ -1,0 +1,5 @@
+<block wx:for="{{states}}">
+    <image class="item-image" src="{{item.pic}}" />
+    <text>{{item.name}}</text>
+    <text>{{item.content}}</text>
+</block>

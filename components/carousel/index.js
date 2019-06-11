@@ -7,5 +7,12 @@ Component({
 
     data: {},
 
-    methods: {}
+    methods: {
+        onTap(event) {
+            const bid = event.target.dataset.id
+            wx.navigateTo({
+                url: `/pages/tap-carousel/index?bid=${bid}`
+            })
+        }
+    }
 })

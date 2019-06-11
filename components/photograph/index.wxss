@@ -1,18 +1,1 @@
-.nav_container{
-   display:flex;
-   justify-content: space-around;
-   margin-top:20rpx;
-}
-
-.nav_item{
-   display:flex;
-   flex-direction:column;
-   align-items: center;
-   padding:20rpx;
-}
-
-.small_pic {
-   width: 50rpx; 
-   height: 50rpx;
-   margin-bottom:20rpx;
-}
+/* components/home-photograph/index.wxss */

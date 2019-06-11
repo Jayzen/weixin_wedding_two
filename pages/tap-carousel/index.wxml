@@ -1,0 +1,4 @@
+<view wx:for="{{tap_carousel_photographs}}">
+    <image data-id="{{item.id}}" bind:tap="onTap" src="{{item.category_pic}}" />
+    <text>{{item.name}}</text>
+</view>
