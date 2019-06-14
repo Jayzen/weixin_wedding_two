@@ -7,12 +7,22 @@ class CarouselModel extends HTTP {
     data = null
     getCarousels() {
         return this.request({
-            url: 'carousels'
+            url: 'tap_carousels'
         })
     }
-    getCarousel() {
+    getCarousel(id) {
         return this.request({
-            url: 'first_carousel'
+            url: 'tap_carousels/' + id
+        })
+    }
+    getDetails(id) {
+        return this.request({
+            url: 'tap_carousel_photographs/' + id
+        })
+    }
+    getCarouselPhotographs(id) {
+        return this.request({
+            url: 'tap_carousel_photographs/'
         })
     }
 }

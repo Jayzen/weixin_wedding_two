@@ -1,46 +1,54 @@
 import {
-    LocationModel
-} from '../../models/location'
-import {
     CarouselModel
 } from '../../models/carousel'
 import {
-    BasicModel
-} from '../../models/basic'
+    TopModel
+} from '../../models/top'
+import {
+    StateModel
+} from '../../models/state'
 
-const locationModel = new LocationModel()
+
 const carouselModel = new CarouselModel()
-const basicModel = new BasicModel()
+const topModel = new TopModel()
+const stateModel = new StateModel()
 
 Page({
     data: {
-        location: null,
         carousels: null,
-        basic: null,
+        top: null,
+        photographs: null,
+        states: null,
         loadingCenter: true
     },
 
     onLoad: function () {
-        locationModel.getLocation()
-            .then(res => {
-                this.setData({
-                    location: res
-                })
-                return carouselModel.getCarousels()
-            })
+        carouselModel.getCarousels()
             .then(res => {
                 this.setData({
                     carousels: res
                 })
-                return basicModel.getBasic()
+                return topModel.getTop()
             })
             .then(res => {
                 this.setData({
-                    basic: res,
-                    loadingCenter: false  
+                    top: res
                 })
-            }).
-            catch(res => {
+                return stateModel.getStates()
+            })
+            .then(res => {
+                this.setData({   
+                    states: res
+                })
+                return carouselModel.getCarouselPhotographs()
+            })
+            .then(res => {
+                this.setData({
+                    loadingCenter: false,
+                    photographs: res
+                }) 
+            })  
+            .catch(res => {
                 console.log(res);
             })
     },

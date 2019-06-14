@@ -11,7 +11,7 @@ Component({
         onTap(event) {
             const bid = event.target.dataset.id
             wx.navigateTo({
-                url: `/pages/photograph-detail/index?bid=${bid}`
+                url: `/pages/tap-carousel-detail/index?bid=${bid}`
             })
         }
     }

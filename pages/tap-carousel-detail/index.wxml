@@ -1,0 +1,3 @@
+<view wx:for="{{tap_carousel_details}}">
+    <image src="{{item.pic}}" />
+</view>
