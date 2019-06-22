@@ -1,1 +1,27 @@
-/* pages/movie/index.wxss */
+page{
+  background-color:#eee;
+}
+.movie_container{
+  margin:30rpx;
+  padding:20rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background:#fff;
+  text-align:center;
+}
+
+.video_title{
+  font-size:16px;
+  margin:20rpx 0;
+}
+
+.video_content{
+  width:100%;
+}
+
+.video_discreption{
+  font-size:12px;
+  margin-bottom:10rpx;
+}
