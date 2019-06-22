@@ -35,13 +35,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 4,
 			"list": [
 				{
-					"id": 3,
+					"id": 0,
 					"name": "detail",
-					"pathName": "pages/photograph-detail/index",
-					"query": "bid=3",
+					"pathName": "pages/menu-detail/index",
+					"query": "bid=1",
 					"scene": null
 				},
 				{
@@ -62,6 +62,13 @@
 					"id": 3,
 					"name": "menus",
 					"pathName": "pages/menus/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "contact",
+					"pathName": "pages/contact/index",
 					"query": "",
 					"scene": null
 				}

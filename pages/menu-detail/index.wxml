@@ -1,5 +1,5 @@
-<block wx:for="{{menu_details}}">
-    <image src="{{item.pic}}" />
-</block>
+<view class="detail_container" wx:for="{{menu_details}}">
+    <image class="detail_content" src="{{item.pic}}" />
+</view>
 <v-support />
 <v-loading class="loading-center" wx:if="{{loadingCenter}}"/>

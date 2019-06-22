@@ -1,19 +1,38 @@
-<view>
-  <view>文字描述</view>
-  <view>文字描述</view>
-  <view>文字描述</view>
-  <view>文字描述</view>
-  <view>文字描述</view>
-  <view>文字描述</view>
-  <view>文字描述</view>
-  <view>文字描述</view>
+<view class="contact_top">
+  <view>婚纱的另一种打开方式</view>
+  <view class="top_middle">如果您想拍摄出与众不同的婚纱照</view>
+  <view class="dividing_line"></view>
+  <view class="english_text"><text class="red_text">CONNEC</text>TION</view>
+  <view>请留下你的联系方式</view>
 </view>
+
 <v-consult />
 
+<view class="contact_list">
+  <view class="contact_item" bind:tap="redirectAddress">
+    <image src="/imgs/public/position.png" />
+    <text>{{location.address}}</text>
+  </view>
+  <view class="contact_item" bind:tap="makePhone">
+    <image src="/imgs/public/phone.png" />
+    <text>{{basic.phone}}</text>
+  </view>
+</view>
 
+<view bind:tap="onOfficial" class="follow">
+  <view class="follow_left">
+    <image src="http://fpoimg.com/30x30?text=test" />
+  </view>
+  <view class="follow_middle">
+    <text>婚纱照的另一种打开方式</text>
+    <text>给您拍摄出与众不同的婚纱</text>
+    <text>请点击右侧按钮关注公众号</text>
+    <text>获取更多精彩内容</text>
+  </view>
+  <view class="follow_right">
+    关注公众号
+  </view>
+</view>
 
-<view bind:tap="redirectAddress">{{location.address}}</view>
-<view bind:tap="makePhone">{{basic.phone}}</view>
-<view bind:tap="onOfficial">关注公众号</view>
 <v-support />
 <v-loading class="loading-center" wx:if="{{false}}"/>

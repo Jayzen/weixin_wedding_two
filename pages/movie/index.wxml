@@ -1,6 +1,8 @@
 <wxs src="../../wxs/filter.wxs" module="util"></wxs>
 <view class="movie_container" wx:for="{{movies}}">
-  <video class="video_content" src="{{item.movie}}" />
+  <video class="video_content" src="{{item.movie}}"  autoplay="{{index === 0}}"/>
   <view class="video_title">{{item.title}}</view>
   <text class="video_discreption">{{util.format(item.content)}}</text>
 </view>
+<v-support />
+<v-loading class="loading-center" wx:if="{{loadingCenter}}"/>
