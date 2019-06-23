@@ -1,1 +1,1 @@
-<image src="{{top.pic}}" />
+<image mode="aspectFill" src="{{top.pic}}" />

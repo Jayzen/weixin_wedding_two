@@ -1,5 +1,5 @@
 <v-top top="{{top}}" />
-<v-carousel carousels="{{carousels}}" />
+<v-carousel class="carousel" carousels="{{carousels}}" />
 <v-state states="{{states}}" />
 <v-photograph photographs="{{photographs}}"/>
 <v-support />
