@@ -1,8 +1,16 @@
 <view class="container home-container">
-    <swiper indicator-dots="true" autoplay="true" class="swiper" interval="2000" circular="true">
+    <swiper 
+    class="swiper" 
+    interval="4000" 
+    autoplay="{{true}}"
+    circular="true"
+    next-margin="30rpx"
+    display-multiple-items="2.2"
+    >
         <block wx:for="{{carousels}}">
             <swiper-item class="banner-item">
-                <image data-id="{{item.id}}" class="item-image" bind:tap="onTap" src="{{item.pic}}" mode="aspectFill" />
+                <image data-id="{{item.id}}" class="item-image" bind:tap="onTap" src="{{item.pic}}" />
+                <text class="image_title">{{item.name}}</text>
             </swiper-item>
         </block>
     </swiper>

@@ -1,6 +1,8 @@
-.home_title{
-    display:flex;
-    height:100rpx;
-    justify-content: center;
-    align-items: center;
+page{
+    padding:10rpx;
+    box-sizing: border-box;
+}
+
+.carousel{
+    /* margin-top:-60rpx; */
 }

@@ -1,1 +1,6 @@
 /* components/header/index.wxss */
+image{
+  width:100%;
+  height:600rpx;
+  /* height:auto; */
+}

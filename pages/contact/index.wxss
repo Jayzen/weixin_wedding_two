@@ -1,0 +1,96 @@
+.contact_top{
+  text-align:center;
+  padding:40rpx;
+  font-size:0;
+}
+
+.contact_top view{
+  /* display:block; */
+  margin:15rpx 0;
+  font-size:14px;
+}
+
+.contact_top .english_text{
+  margin-top:10rpx;
+  font-style:italic;
+}
+
+.english_text text{
+  color:red;
+}
+
+/* 顶部中间的横线 */
+.contact_top .dividing_line{
+  margin:0;
+  width:30%;
+  height:0;
+  display:inline-block;
+  border-bottom:1px solid red;
+}
+
+
+/* 地址和联系方式 */
+.contact_list{
+  padding:30rpx 20rpx;
+}
+.contact_item{
+  display:flex;
+  align-items:center;
+  padding:10rpx;
+}
+.contact_item image{
+  margin-right:20rpx;
+  width:40rpx;
+  height:40rpx;
+}
+.contact_item text{
+  flex-basis: 90%;
+}
+
+/* 关注公众号 */
+.follow{
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  padding:20rpx 0;
+  width:90%;
+  margin:0 auto;
+  border:1px solid #ddd;
+  border-radius:5px;
+}
+.follow_left{
+  flex-basis:20%;
+  text-align:center;
+}
+.follow_left image{
+  width:100rpx;
+  height:100rpx;
+  border-radius: 50%;
+}
+.follow_middle{
+  flex-basis: 50%;
+}
+.follow_middle text{
+  display:block;
+}
+.follow_middle text:nth-child(1){
+  font-size:24rpx;
+}
+.follow_middle text:nth-child(2){
+  font-size:22rpx;
+  color:rgb(236, 99, 99);
+}
+.follow_middle text:nth-child(3){
+  font-size:20rpx;
+}
+.follow_middle text:nth-child(4){
+  font-size:18rpx;
+}
+.follow_right{
+  flex-basis: 22%;
+  border:1px solid #000;
+  border-radius:4px;
+  text-align:center;
+  font-size:24rpx;
+  line-height:40rpx;
+}

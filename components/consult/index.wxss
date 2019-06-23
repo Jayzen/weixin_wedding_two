@@ -13,10 +13,11 @@
 }
 
 .submit_btn{
-    width:250rpx;
+    width:100%;
     height:80rpx;
     line-height:80rpx;
     background:#2e3b55;
     border-radius: 0;
     color:#fff;
+    font-size:14px;
 }
