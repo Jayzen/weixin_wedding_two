@@ -1,3 +1,0 @@
-<text>显示照片</text>
-<view>{{location.address}}</view>
-<view>{{basic.phone}}</view>

@@ -1,0 +1,8 @@
+<block wx:for="{{official_accounts}}">
+    <image src="{{item.pic}}" />
+</block>
+
+<view>门店地址:{{location.address}}</view>
+<view>客服电话:{{basic.phone}}</view>
+<v-support />
+<v-loading class="loading-center" wx:if="{{loadingCenter}}" />

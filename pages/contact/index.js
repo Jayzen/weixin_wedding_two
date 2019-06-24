@@ -36,7 +36,7 @@ Page({
 
     onOfficial() {
         wx.navigateTo({
-            url: `/pages/official/index`
+            url: `/pages/official-account/index`
         })
     },
 

@@ -2,7 +2,7 @@
     <swiper 
     class="swiper" 
     interval="4000" 
-    autoplay="{{true}}"
+    autoplay="{{false}}"
     circular="true"
     next-margin="30rpx"
     display-multiple-items="2.2"
