@@ -7,8 +7,8 @@
         "pages/support/index",
         "pages/movie/index",
         "pages/official-account/index",
-        "pages/tap-carousel/index",
-        "pages/tap-carousel-detail/index"
+        "pages/tap-sort/index",
+        "pages/tap-detail/index"
     ],
     "window": {
         "navigationBarTitleText": "GUGU摄影",

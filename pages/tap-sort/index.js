@@ -7,20 +7,28 @@ const carouselModel = new CarouselModel()
 Page({
 
     data: {
-        tap_carousel_details: null
+        tap_sorts: null
     },
 
     onLoad: function (options) {
         const bid = options.bid
-        carouselModel.getDetails(bid)
+        carouselModel.getCarousel(bid)
             .then(res => {
                 this.setData({
-                    tap_carousel_details: res
+                    tap_sorts: res
                 })
             })
             .catch(res => {
                 console.log(res);
             })
+    },
+
+    onTap(event) {
+        const bid = event.target.dataset.id
+        console.log(bid)
+        wx.navigateTo({
+            url: `/pages/tap-detail/index?bid=${bid}`
+        })
     },
 
     onShareAppMessage: function () {

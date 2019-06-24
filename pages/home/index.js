@@ -37,17 +37,12 @@ Page({
                 return stateModel.getStates()
             })
             .then(res => {
-                this.setData({   
-                    states: res
-                })
-                return carouselModel.getCarouselPhotographs()
-            })
-            .then(res => {
                 this.setData({
-                    loadingCenter: false,
-                    photographs: res
-                }) 
-            })  
+                    loadingCenter: false,  
+                    states: res
+
+                })
+            })
             .catch(res => {
                 console.log(res);
             })
