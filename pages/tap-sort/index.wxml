@@ -1,4 +1,4 @@
 <view wx:for="{{tap_sorts}}">
-    <image data-id="{{item.id}}" bind:tap="onTap" src="{{item.pic}}" />
+    <image data-id="{{item.id}}" data-type="carousel" bind:tap="onTap" src="{{item.pic}}" />
     <text>{{item.name}}</text>
 </view>

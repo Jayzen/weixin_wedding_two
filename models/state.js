@@ -10,6 +10,11 @@ class StateModel extends HTTP {
             url: 'states'
         })
     }
+    getState(id) {
+        return this.request({
+            url: 'states/' + id
+        })
+    }
 }
 
 export {

@@ -25,9 +25,10 @@ Page({
 
     onTap(event) {
         const bid = event.target.dataset.id
-        console.log(bid)
+        const type = event.target.dataset.type
+        console.log(event.target.dataset)
         wx.navigateTo({
-            url: `/pages/tap-detail/index?bid=${bid}`
+            url: `/pages/tap-detail/index?bid=${bid}&type=${type}`
         })
     },
 

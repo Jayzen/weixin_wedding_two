@@ -7,8 +7,12 @@ import {
 import {
     StateModel
 } from '../../models/state'
+import {
+    HomePhotographModel
+} from '../../models/home_photograph'
 
 
+const homePhotographModel = new HomePhotographModel()
 const carouselModel = new CarouselModel()
 const topModel = new TopModel()
 const stateModel = new StateModel()
@@ -17,8 +21,8 @@ Page({
     data: {
         carousels: null,
         top: null,
-        photographs: null,
         states: null,
+        homePhotographs: null,
         loadingCenter: true
     },
 
@@ -37,10 +41,15 @@ Page({
                 return stateModel.getStates()
             })
             .then(res => {
-                this.setData({
-                    loadingCenter: false,  
+                this.setData({ 
                     states: res
-
+                })
+                return homePhotographModel.getHomePhotographs()
+            })
+            .then(res => {
+                this.setData({
+                    loadingCenter: false,
+                    homePhotographs: res
                 })
             })
             .catch(res => {

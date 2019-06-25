@@ -1,0 +1,3 @@
+<view wx:for="{{homePhotographs}}">
+    <image data-id="{{item.id}}" data-type="home" bind:tap="onTap" src="{{item.pic}}" />
+</view>

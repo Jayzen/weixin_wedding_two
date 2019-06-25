@@ -1,6 +1,6 @@
 Component({
     properties: {
-        photographs: {
+        homePhotographs: {
             type: Array
         }
     },
@@ -10,8 +10,10 @@ Component({
     methods: {
         onTap(event) {
             const bid = event.target.dataset.id
+            const type = event.target.dataset.type
+            console.log(event.target.dataset)
             wx.navigateTo({
-                url: `/pages/tap-carousel-detail/index?bid=${bid}`
+                url: `/pages/tap-detail/index?bid=${bid}&type=${type}`
             })
         }
     }

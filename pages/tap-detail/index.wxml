@@ -1,4 +1,4 @@
-<text>{{sort.name}}</text>
-<block wx:for="{{sort.tap_photograph_images}}">
+<text>{{photograph.name}}</text>
+<block wx:for="{{photograph.tap_photograph_images}}">
     <image src="{{item.pic}}" />
 </block>
