@@ -16,9 +16,7 @@ Page({
 
     onLoad: function (options) {
         const bid = options.bid
-        console.log("hello world")
-        console.log(options)
-        
+                
         if(options.type == "carousel"){
             carouselModel.getSort(bid)
                 .then(res => {

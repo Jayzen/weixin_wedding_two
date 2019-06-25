@@ -1,0 +1,23 @@
+.contact_container{
+    margin-top: 100rpx; 
+    margin-right: 40rpx;
+    margin-left: 40rpx;
+}
+
+.contact{
+  margin-top: 20rpx;
+  /* padding-bottom:30rpx; */
+  display:flex;
+  flex-direction: column;
+  border-bottom:1rpx solid #ddd;
+  font-size:14px;
+}
+
+.item_top{
+  display:flex;
+  justify-content: space-between;
+}
+
+.item_top .phone{
+  color: #AB956D;
+}

@@ -6,7 +6,7 @@
   <view>请留下你的联系方式</view>
 </view>
 
-<v-consult />
+<v-contact />
 
 <view class="contact_list">
   <view class="contact_item" bind:tap="redirectAddress">
@@ -21,7 +21,7 @@
 
 <view bind:tap="onOfficial" class="follow">
   <view class="follow_left">
-    <image src="http://fpoimg.com/30x30?text=test" />
+    <image src="{{basic.avatar}}" />
   </view>
   <view class="follow_middle">
     <text>婚纱照的另一种打开方式</text>

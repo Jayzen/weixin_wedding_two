@@ -1,0 +1,9 @@
+<view class="contact_container">
+    <view class="contact" wx:for="{{contacts}}">
+        <view class="item_top">
+            <!-- <text></text> -->
+            <text>{{index+1}}.{{item.name}}</text>
+            <text class="phone" data-telephone="{{item.telephone}}" bind:tap="makePhone">{{item.telephone}}</text>
+        </view>
+    </view>
+</view>
