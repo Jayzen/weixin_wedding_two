@@ -10,13 +10,18 @@ Page({
         loadingCenter: true
     },
 
-    onLoad: function (options) {
+    onLoad: function () {
+        this._loadData();
+    },
+
+    _loadData: function (callback) {
         menuModel.getMenus()
             .then(res => {
                 this.setData({
                     loadingCenter: false,
                     menus: res
                 })
+                callback && callback();
             }).
             catch(res => {
                 console.log(res);
@@ -28,6 +33,12 @@ Page({
         wx.navigateTo({
             url: `/pages/menu-detail/index?bid=${bid}`
         })
+    },
+
+    onPullDownRefresh: function () {
+        this._loadData(() => {
+            wx.stopPullDownRefresh()
+        });
     },
 
     onShareAppMessage: function () {

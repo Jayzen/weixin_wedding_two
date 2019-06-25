@@ -14,9 +14,11 @@
     ],
     "window": {
         "navigationBarTitleText": "GUGU摄影",
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#000",
-        "navigationBarTextStyle": "white"
+        "backgroundColor": "#FFFFFF",
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
     },
     "tabBar": {
         "list": [

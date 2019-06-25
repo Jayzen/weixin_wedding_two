@@ -6,22 +6,33 @@ const movieModel = new MovieModel()
 
 Page({
     data: {
-        movies: null
+        movies: null,
+        loadingCenter: true
     },
 
-    onLoad: function (options) {
+    onLoad: function() {
+        this._loadData();
+    },
+
+    _loadData: function (callback) {
         movieModel.getMovies()
             .then(res => {
                 this.setData({
                     loadingCenter: false,
                     movies: res
                 })
+                callback && callback();
             }).
-            catch(res => {
-                console.log(res);
-            })
+        catch(res => {
+            console.log(res);
+        })
     },
 
-    onShareAppMessage: function () {
-    }
+    onPullDownRefresh: function () {
+        this._loadData(() => {
+            wx.stopPullDownRefresh()
+        });
+    },
+
+    onShareAppMessage: function() {}
 })

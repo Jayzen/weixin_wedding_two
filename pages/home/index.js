@@ -27,6 +27,10 @@ Page({
     },
 
     onLoad: function () {
+        this._loadData();
+    },
+
+    _loadData: function (callback) {
         carouselModel.getCarousels()
             .then(res => {
                 this.setData({
@@ -51,10 +55,17 @@ Page({
                     loadingCenter: false,
                     homePhotographs: res
                 })
+                callback && callback();
             })
             .catch(res => {
                 console.log(res);
             })
+    },
+
+    onPullDownRefresh: function () {
+        this._loadData(() => {
+            wx.stopPullDownRefresh()
+        });
     },
   
     onShareAppMessage: function () {
