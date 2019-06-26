@@ -28,7 +28,7 @@ Page({
         const type = event.target.dataset.type
         console.log(event.target.dataset)
         wx.navigateTo({
-            url: `/pages/tap-detail/index?bid=${bid}&type=${type}`
+            url: `/pages/photograph-detail/index?bid=${bid}&type=${type}`
         })
     },
 
