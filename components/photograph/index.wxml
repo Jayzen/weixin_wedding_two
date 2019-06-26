@@ -1,5 +1,0 @@
-<view class="photograph_container">
-    <view class="photograph" wx:for="{{photographs}}">
-        <image data-id="{{item.id}}" bind:tap="onTap" src="{{item.home_pic}}" />
-    </view>
-</view>

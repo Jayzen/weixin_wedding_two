@@ -1,13 +1,12 @@
 import {
-    MenuModel
-} from '../../models/menu'
+    ContactModel
+} from '../../models/contact'
 
-const menuModel = new MenuModel()
+const contactModel = new ContactModel()
+
 
 Page({
     data: {
-        menus: null,
-        loadingCenter: true
     },
 
     onLoad: function () {
@@ -15,11 +14,10 @@ Page({
     },
 
     _loadData: function (callback) {
-        menuModel.getMenus()
+        contactModel.getContacts()
             .then(res => {
                 this.setData({
-                    loadingCenter: false,
-                    menus: res
+                    contacts: res
                 })
                 callback && callback();
             }).
@@ -28,10 +26,9 @@ Page({
             })
     },
 
-    onTap(event) {
-        const bid = event.target.dataset.id
-        wx.navigateTo({
-            url: `/pages/menu-detail/index?bid=${bid}`
+    makePhone: function (event) {
+        wx.makePhoneCall({
+            phoneNumber: event.currentTarget.dataset.telephone
         })
     },
 

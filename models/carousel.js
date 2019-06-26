@@ -15,14 +15,14 @@ class CarouselModel extends HTTP {
             url: 'tap_carousels/' + id
         })
     }
-    getDetails(id) {
+    getPhotograph(id){
         return this.request({
-            url: 'tap_carousel_photographs/' + id
+            url: 'tap_photographs/' + id
         })
     }
-    getCarouselPhotographs(id) {
+    getHomePhotograph(id) {
         return this.request({
-            url: 'tap_carousel_photographs/'
+            url: 'home_photographs/' + id
         })
     }
 }

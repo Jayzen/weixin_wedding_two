@@ -16,6 +16,10 @@ Page({
     },
 
     onLoad: function () {
+        this._loadData();
+    },
+
+    _loadData: function (callback) {
         locationModel.getLocation()
             .then(res => {
                 this.setData({
@@ -28,6 +32,7 @@ Page({
                     basic: res,
                     loadingCenter: false
                 })
+                callback && callback();
             }).
             catch(res => {
                 console.log(res);
@@ -53,5 +58,11 @@ Page({
             name: this.data.location.name,
             address: this.data.location.address
         })
+    },
+
+    onPullDownRefresh: function () {
+        this._loadData(() => {
+            wx.stopPullDownRefresh()
+        });
     }    
 })

@@ -1,6 +1,6 @@
 <v-top top="{{top}}" />
 <v-carousel class="carousel" carousels="{{carousels}}" />
 <v-state states="{{states}}" />
-<v-photograph photographs="{{photographs}}"/>
+<v-photograph homePhotographs="{{homePhotographs}}"/>
 <v-support />
 <v-loading class="loading-center" wx:if="{{loadingCenter}}"/>

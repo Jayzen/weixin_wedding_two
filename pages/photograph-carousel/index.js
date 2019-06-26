@@ -7,7 +7,7 @@ const carouselModel = new CarouselModel()
 Page({
 
     data: {
-        tap_carousel_photographs: null
+        tap_photographs: null
     },
 
     onLoad: function (options) {
@@ -15,7 +15,7 @@ Page({
         carouselModel.getCarousel(bid)
             .then(res => {
                 this.setData({
-                    tap_carousel_photographs: res
+                    tap_photographs: res
                 })
             })
             .catch(res => {
@@ -25,12 +25,17 @@ Page({
 
     onTap(event) {
         const bid = event.target.dataset.id
-        console.log(bid)
+        const type = event.target.dataset.type
+        console.log(event.target.dataset)
         wx.navigateTo({
-            url: `/pages/tap-carousel-detail/index?bid=${bid}`
+            url: `/pages/photograph-detail/index?bid=${bid}&type=${type}`
         })
     },
-  
+
+    onPullDownRefresh: function () {
+        wx.stopPullDownRefresh()
+    },
+
     onShareAppMessage: function () {
     }
 })

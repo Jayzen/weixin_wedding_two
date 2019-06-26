@@ -7,14 +7,18 @@
         "pages/support/index",
         "pages/movie/index",
         "pages/official-account/index",
-        "pages/tap-carousel/index",
-        "pages/tap-carousel-detail/index"
+        "pages/photograph-carousel/index",
+        "pages/photograph-detail/index",
+        "pages/merchant-contact/index",
+        "pages/merchant/index"
     ],
     "window": {
         "navigationBarTitleText": "GUGU摄影",
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#000",
-        "navigationBarTextStyle": "white"
+        "backgroundColor": "#FFFFFF",
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
     },
     "tabBar": {
         "list": [

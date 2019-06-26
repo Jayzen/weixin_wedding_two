@@ -7,8 +7,12 @@ import {
 import {
     StateModel
 } from '../../models/state'
+import {
+    HomePhotographModel
+} from '../../models/home_photograph'
 
 
+const homePhotographModel = new HomePhotographModel()
 const carouselModel = new CarouselModel()
 const topModel = new TopModel()
 const stateModel = new StateModel()
@@ -17,12 +21,16 @@ Page({
     data: {
         carousels: null,
         top: null,
-        photographs: null,
         states: null,
+        homePhotographs: null,
         loadingCenter: true
     },
 
     onLoad: function () {
+        this._loadData();
+    },
+
+    _loadData: function (callback) {
         carouselModel.getCarousels()
             .then(res => {
                 this.setData({
@@ -37,20 +45,27 @@ Page({
                 return stateModel.getStates()
             })
             .then(res => {
-                this.setData({   
+                this.setData({ 
                     states: res
                 })
-                return carouselModel.getCarouselPhotographs()
+                return homePhotographModel.getHomePhotographs()
             })
             .then(res => {
                 this.setData({
                     loadingCenter: false,
-                    photographs: res
-                }) 
-            })  
+                    homePhotographs: res
+                })
+                callback && callback();
+            })
             .catch(res => {
                 console.log(res);
             })
+    },
+
+    onPullDownRefresh: function () {
+        this._loadData(() => {
+            wx.stopPullDownRefresh()
+        });
     },
   
     onShareAppMessage: function () {
