@@ -10,20 +10,30 @@ import {
 import {
     HomePhotographModel
 } from '../../models/home_photograph'
-
+import {
+    BasicModel
+} from '../../models/basic'
+import {
+    LocationModel
+} from '../../models/location'
 
 const homePhotographModel = new HomePhotographModel()
 const carouselModel = new CarouselModel()
 const topModel = new TopModel()
 const stateModel = new StateModel()
+const basicModel = new BasicModel()
+const locationModel = new LocationModel()
 
 Page({
     data: {
+        basic: null,
+        location: null,
         carousels: null,
         top: null,
         states: null,
         homePhotographs: null,
-        loadingCenter: true
+        loadingCenter: true,
+        log: '象湖 摄影'
     },
 
     onLoad: function () {
@@ -56,7 +66,20 @@ Page({
                     homePhotographs: res
                 })
                 callback && callback();
+                return basicModel.getBasic();
             })
+            .then(res=>{
+                this.setData({
+                    basic: res
+                })
+                return locationModel.getLocation();
+            })
+            .then(res=>{
+                this.setData({
+                    location: res
+                })
+            })
+            
             .catch(res => {
                 console.log(res);
             })

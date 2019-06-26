@@ -1,0 +1,29 @@
+.log{
+  text-align:center;
+  position: relative;
+}
+.log text{
+  display:inline-block;
+  background:#fff;
+  z-index: 99;
+  padding:0 20rpx;
+  font-size:14px;
+  font-style: italic;
+  font-weight:bold;
+}
+.log text:before, .log text:after{
+  content:'';
+  position: absolute;
+  background:#000;
+  height:1px;
+  top:50%;
+  /* right:0; */
+  width:300rpx;
+  z-index: -1;
+}
+.log text:before{
+  left:40rpx;
+}
+.log text:after{
+  right:40rpx;
+}

@@ -1,0 +1,7 @@
+<view class="footer">
+    <view class="footer_left"></view>
+    <view class="footer_right">
+        <view>门店地址:{{address}}</view>
+        <view>客服电话:{{phone}}</view>
+    </view>
+</view>

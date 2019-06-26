@@ -1,1 +1,7 @@
-/* pages/official/index.wxss */
+.course{
+  font-size:0;
+}
+.course image{
+  width:100%;
+}
+

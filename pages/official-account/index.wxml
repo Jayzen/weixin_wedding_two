@@ -1,8 +1,9 @@
-<block wx:for="{{official_accounts}}">
-    <image src="{{item.pic}}" />
-</block>
+<!-- 教程图片 -->
+<view class="course">
+    <image wx:for="{{official_accounts}}" mode="aspectFit" src="{{item.pic}}" />
+</view>
 
-<view>门店地址:{{location.address}}</view>
-<view>客服电话:{{basic.phone}}</view>
+<!-- 底部地址和电话 -->
+<v-pagefooter phone="{{basic.phone}}" address="{{location.address}}" />
 <v-support />
 <v-loading class="loading-center" wx:if="{{loadingCenter}}" />
