@@ -15,9 +15,9 @@ class CarouselModel extends HTTP {
             url: 'tap_carousels/' + id
         })
     }
-    getSort(id){
+    getPhotograph(id){
         return this.request({
-            url: 'tap_sorts/' + id
+            url: 'tap_photographs/' + id
         })
     }
     getHomePhotograph(id) {

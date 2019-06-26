@@ -7,7 +7,7 @@ const carouselModel = new CarouselModel()
 Page({
 
     data: {
-        tap_sorts: null
+        tap_photographs: null
     },
 
     onLoad: function (options) {
@@ -15,7 +15,7 @@ Page({
         carouselModel.getCarousel(bid)
             .then(res => {
                 this.setData({
-                    tap_sorts: res
+                    tap_photographs: res
                 })
             })
             .catch(res => {

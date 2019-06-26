@@ -1,4 +1,3 @@
-<text>{{photograph.name}}</text>
-<block wx:for="{{photograph.tap_photograph_images}}">
+<block wx:for="{{photographs}}">
     <image src="{{item.pic}}" />
 </block>

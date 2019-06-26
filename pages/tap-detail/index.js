@@ -11,17 +11,17 @@ const carouselModel = new CarouselModel()
 Page({
 
     data: {
-        photograph: null
+        photographs: null
     },
 
     onLoad: function (options) {
         const bid = options.bid
                 
-        if(options.type == "carousel"){
-            carouselModel.getSort(bid)
+        if(options.type == "photograph"){
+          carouselModel.getPhotograph(bid)
                 .then(res => {
                     this.setData({
-                        photograph: res
+                        photographs: res
                     })
                 })
                 .catch(res => {
@@ -31,7 +31,7 @@ Page({
             carouselModel.getHomePhotograph(bid)
                 .then(res => {
                     this.setData({
-                        photograph: res
+                        photographs: res
                     })
                 })
                 .catch(res => {
@@ -41,7 +41,7 @@ Page({
             stateModel.getState(bid)
                 .then(res => {
                     this.setData({
-                        photograph: res
+                        photographs: res
                     })
                 })
                 .catch(res => {

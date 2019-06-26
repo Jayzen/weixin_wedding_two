@@ -8,10 +8,18 @@
 		"newFeature": true,
 		"nodeModules": false,
 		"autoAudits": false,
-		"checkInvalidKey": true
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"enhance": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.1",
+	"libVersion": "2.0.4",
 	"appid": "wx5f97133cf84d829b",
 	"projectname": "wedding",
 	"isGameTourist": false,
