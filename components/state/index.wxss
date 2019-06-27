@@ -8,7 +8,27 @@
   flex-basis: 50%;
   padding:10rpx;
   box-sizing: border-box;
+  position: relative;
 }
 .state image{
   height:250rpx;
+}
+
+.model_top{
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  top:10rpx;
+  right:10rpx;
+  left:10rpx;
+  bottom:10rpx;
+  background:rgba(0,0,0,.5);
+  color:#fff;
+  font-size:16px;
+}
+
+.model_content{
+  font-weight:bold;
 }

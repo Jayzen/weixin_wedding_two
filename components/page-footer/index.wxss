@@ -1,0 +1,27 @@
+.footer{
+  display:flex;
+  align-items:center;
+  margin:20rpx 4rpx;
+  padding:10rpx 0;
+  background:#000;
+  color:#fff;
+}
+
+.footer_left{
+  height:50rpx;
+  width:10rpx;
+  margin-left:8rpx;
+  background:#fff;
+}
+
+.footer_right{
+  margin-left:20rpx;
+  display:flex;
+  flex-direction: column;
+  font-size:12px;
+}
+
+.footer_right view{
+  height:30rpx;
+  line-height:30rpx;
+}
