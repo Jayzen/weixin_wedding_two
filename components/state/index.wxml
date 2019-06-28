@@ -1,7 +1,7 @@
 <view class="state_container">
     <view class="state" wx:for="{{states}}">
-        <image data-id="{{item.id}}" data-type="state" bind:tap="onTap" src="{{item.pic}}" />
-        <view class="model_top">
+        <image src="{{item.pic}}" />
+        <view data-id="{{item.id}}" data-type="state" class="model_top" bind:tap="onTap">
             <text class="model_title">{{item.name}}</text>
             <text class="model_content">{{item.content}}</text>
         </view>
