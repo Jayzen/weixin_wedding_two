@@ -9,9 +9,9 @@ Component({
 
     methods: {
         onTap(event) {
-            const bid = event.target.dataset.id
-            const type = event.target.dataset.type
-            console.log(event.target.dataset)
+            const bid = event.currentTarget.dataset.id
+            const type = event.currentTarget.dataset.type
+            console.log(event.currentTarget.dataset)
             wx.navigateTo({
               url: `/pages/photograph-detail/index?bid=${bid}&type=${type}`
             })

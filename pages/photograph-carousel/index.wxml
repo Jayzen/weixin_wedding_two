@@ -1,4 +1,6 @@
-<view wx:for="{{tap_photographs}}">
-    <image data-id="{{item.id}}" data-type="photograph" bind:tap="onTap" src="{{item.pic}}" />
-    <text>{{item.name}}</text>
+<view class="carousel_container">
+    <view class="carousel_item" wx:for="{{tap_photographs}}">
+        <image data-id="{{item.id}}" data-type="photograph" bind:tap="onTap" src="{{item.pic}}" mode="aspectFill"/>
+        <text>{{item.name}}</text>
+    </view>
 </view>

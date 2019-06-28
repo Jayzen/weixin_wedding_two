@@ -1,6 +1,6 @@
 <v-top top="{{top}}" />
 <v-carousel class="carousel" carousels="{{carousels}}" />
-<v-log log="{{log}}"/>
+<v-logo logoName="{{logoName}}"/>
 <v-state states="{{states}}" />
 <v-photograph homePhotographs="{{homePhotographs}}"/>
 <v-pagefooter address="{{location.address}}" phone="{{basic.phone}}" />

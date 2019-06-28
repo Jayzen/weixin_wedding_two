@@ -11,7 +11,8 @@ const carouselModel = new CarouselModel()
 Page({
 
     data: {
-        photographs: null
+        photographs: null,
+        logoName: '象湖 摄影'
     },
 
     onLoad: function (options) {

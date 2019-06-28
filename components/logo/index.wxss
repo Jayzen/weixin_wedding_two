@@ -1,8 +1,9 @@
-.log{
+.logo{
   text-align:center;
   position: relative;
+  margin:30rpx 0;
 }
-.log text{
+.logo text{
   display:inline-block;
   background:#fff;
   z-index: 99;
@@ -11,7 +12,7 @@
   font-style: italic;
   font-weight:bold;
 }
-.log text:before, .log text:after{
+.logo text:before, .logo text:after{
   content:'';
   position: absolute;
   background:#000;
@@ -21,9 +22,9 @@
   width:300rpx;
   z-index: -1;
 }
-.log text:before{
+.logo text:before{
   left:40rpx;
 }
-.log text:after{
+.logo text:after{
   right:40rpx;
 }
