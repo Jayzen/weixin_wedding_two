@@ -1,1 +1,8 @@
-/* pages/tap-detail/index.wxss */
+page{
+    padding:10rpx;
+    box-sizing: border-box;
+}
+image{
+    width:100%;
+    margin-bottom:10rpx;
+}

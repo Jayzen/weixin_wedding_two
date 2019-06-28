@@ -1,0 +1,3 @@
+<view class="logo">
+  <text>{{logoName}}</text>
+</view>

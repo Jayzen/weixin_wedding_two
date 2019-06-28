@@ -1,3 +1,4 @@
+<v-logo logoName="{{logoName}}"/>
 <block wx:for="{{photographs}}">
-    <image src="{{item.pic}}" />
+    <image src="{{item.pic}}" mode="widthFix"/>
 </block>

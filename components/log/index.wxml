@@ -1,3 +1,0 @@
-<view class="log">
-  <text>{{log}}</text>
-</view>

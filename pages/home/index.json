@@ -6,7 +6,7 @@
         "v-loading": "/components/loading/index",
         "v-top": "/components/top/index",
         "v-state": "/components/state/index",
-        "v-log": "/components/log/index",
+        "v-logo": "/components/logo/index",
         "v-pagefooter": "/components/page-footer/index"
   }
 }

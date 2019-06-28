@@ -33,7 +33,7 @@ Page({
         states: null,
         homePhotographs: null,
         loadingCenter: true,
-        log: '象湖 摄影'
+        logoName: '象湖 摄影'
     },
 
     onLoad: function () {
